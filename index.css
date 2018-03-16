@@ -1,3 +1,18 @@
+/* Bitcoin Symbol-STARTS */
+@font-face {
+    font-family: 'bitcoinregular';
+    src: url('bitcoin-webfont.eot');
+    src: url('bitcoin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bitcoin-webfont.woff2') format('woff2'),
+         url('bitcoin-webfont.woff') format('woff'),
+         url('bitcoin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Bitcoin Symbol-ENDS */
+
 *{
 	margin: 0;
 	padding: 0;
@@ -5,19 +20,110 @@
 }
 
 #mainContainer{
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 20px;
+	min-height: 100%;
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	flex-direction: column;
 }
 
 header{
 	margin: 20px;
-	padding: 20px;
+	padding: 20px;	
+}
+
+#cardsHolder{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.card{
+	width: 275px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 20px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 50px grey;
+	transition: all 0.5s;
+	color: white;
+}
+
+.card:hover{
+	cursor: auto;
+	box-shadow: 0px 0px 50px black;
+}
+
+/* 
+#3cba54 ~ Green
+#4885ed ~ Blue
+#f4c20d ~ Yellow
+#db3236 ~ Red
+ */
+
+#card1, #card3, #card6{
+	background-color: #3cba54;
+}
+
+#card2, #card7{
+	background-color: #f4c20d;
+}
+
+#card4, #card5{
+	background-color: #db3236;
+}
+
+.img{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+}
+
+.cardH1{
+	margin: 5px 0 0 0;
+}
+
+.cardIntro{
+	text-align: justify;
+	margin: 5px;
+}
+
+.cardDesc{
+	margin: 5px;
+}
+
+.cardRate{
+	margin: 5px;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+.cardButton{
+	margin: 5px;
+	padding: 5px 10px;
+	font-size: 1.2em;
+	background-color: transparent;
+	font-size: 1.7em;
+	transition: all 0.5s;
+}
+
+.cardButton:hover{
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+	border-radius: 20px;
+	background-color: white;
+	color: black;
+	font-size: 1.5em;
 }
