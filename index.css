@@ -30,8 +30,9 @@
 }
 
 header{
-	margin: 20px;
-	padding: 20px;	
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
 }
 
 #cardsHolder{
@@ -109,9 +110,10 @@ header{
 .cardButton{
 	margin: 5px;
 	padding: 5px 10px;
-	font-size: 1.2em;
-	background-color: transparent;
-	font-size: 1.7em;
+	border-radius: 20px;
+	background-color: white;
+	color: black;
+	font-size: 1.45em;
 	transition: all 0.5s;
 }
 
@@ -122,8 +124,5 @@ header{
 	    -ms-transform: scale(1.1);
 	     -o-transform: scale(1.1);
 	        transform: scale(1.1);
-	border-radius: 20px;
-	background-color: white;
-	color: black;
 	font-size: 1.5em;
 }
